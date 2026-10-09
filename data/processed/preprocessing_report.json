@@ -1,0 +1,75 @@
+{
+    "mode": "author_code_unchanged",
+    "scope": "Reconstructed from public code; identity with the paper's full evaluation cohort is unverified.",
+    "input": {
+        "path": "D:\\Graduate student\\masfactory论文\\original_data\\ambifc\\ambifc_publish-20261008T093810Z-1-001\\ambifc_publish\\test.certain.jsonl",
+        "sha256": "673223e0f99f20572965ab737dd255a84cf4244dd94f01f524601a063888c992"
+    },
+    "author_preprocessing": {
+        "path": "D:\\Graduate student\\masfactory论文\\original_code\\collaboration_MAS-main\\fact_code\\filter_claim_data.py",
+        "sha256": "88c43f41b2f61b0c84524c554876b273d73b161945437fdb60f436b9f0ec9033"
+    },
+    "author_examples": {
+        "path": "D:\\Graduate student\\masfactory论文\\original_code\\collaboration_MAS-main\\fact_data\\data_example.json",
+        "sha256": "13d740951d130d9d6727f8a02f1f33daddfc255b3a886036a4f83981fe715594"
+    },
+    "raw_passage_records": 5121,
+    "raw_unique_claim_ids": 3224,
+    "eligible_passage_records_before_claim_id_overwrites": 539,
+    "overwritten_eligible_records": 38,
+    "stage1_samples": 501,
+    "final_samples": 501,
+    "target_label_counts": {
+        "refuting": 92,
+        "supporting": 409
+    },
+    "evidence_label_combinations": {
+        "neutral + refuting": 91,
+        "neutral + supporting": 407,
+        "supporting": 2,
+        "refuting": 1
+    },
+    "evidence_count_distribution": {
+        "1": 3,
+        "2": 57,
+        "3": 66,
+        "4": 45,
+        "5": 56,
+        "6": 274
+    },
+    "single_label_sample_ids_retained": [
+        "2456",
+        "8185",
+        "8365"
+    ],
+    "example_exact_matches": {
+        "7467": true,
+        "7475": true,
+        "7476": true,
+        "7482": true,
+        "7484": true,
+        "7468": true,
+        "7485": true,
+        "7473": true,
+        "2019": true,
+        "7491": true
+    },
+    "all_examples_match": true,
+    "prior_audit_comparison": {
+        "source": {
+            "path": "D:\\Graduate student\\masfactory论文\\original_code\\dataset_audit\\filtered_test_certain_processed.json",
+            "sha256": "e7d10e2aae39d1af77e3e43f44fa9d3cafcea48c432df1beab1313ff55a22a43"
+        },
+        "content_and_order_equal": true
+    },
+    "outputs": {
+        "stage1": {
+            "path": "D:\\Graduate student\\masfactory论文\\original_code\\masfactory_ses\\data\\processed\\filtered_test_certain.json",
+            "sha256": "524d033ae5c6e11044432603ecf8ec19366f5e794006839709a74d8f72aab9e3"
+        },
+        "final": {
+            "path": "D:\\Graduate student\\masfactory论文\\original_code\\masfactory_ses\\data\\processed\\filtered_test_certain_processed.json",
+            "sha256": "e7d10e2aae39d1af77e3e43f44fa9d3cafcea48c432df1beab1313ff55a22a43"
+        }
+    }
+}

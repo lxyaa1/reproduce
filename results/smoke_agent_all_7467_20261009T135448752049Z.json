@@ -1,0 +1,28 @@
+{
+  "started_at_utc": "2026-10-09T13:54:47.764651+00:00",
+  "claim_id": "7467",
+  "baseline": "Agent_all",
+  "requested_model": "gpt-4o-2024-08-06",
+  "endpoint_hostname": "api.apiyi.com",
+  "key_environment_variable": "OPENAI_API_KEY",
+  "masfactory_module": "D:\\Graduate student\\MASFactory-main\\masfactory\\__init__.py",
+  "adapter": "LegacyOpenAIModel (Chat Completions)",
+  "input_sha256": "e7d10e2aae39d1af77e3e43f44fa9d3cafcea48c432df1beab1313ff55a22a43",
+  "evidence_count": 6,
+  "gold_label": "refuting",
+  "settings": {
+    "max_tokens": 512,
+    "temperature": "not explicitly set"
+  },
+  "reproduction_notes": [
+    "Agent_all concatenates all evidence texts with newlines; original standalone baseline code was not supplied.",
+    "Original instruction, dict-string prompt, empty history and Result/Explanation requirements are preserved.",
+    "Smoke test caps output at 512 tokens; original API helper has no explicit cap.",
+    "Evaluation uses exact label equality rather than the author's substring comparison.",
+    "A gateway's returned model name alone cannot independently authenticate its upstream model."
+  ],
+  "status": "error",
+  "error_type": "ProxyError",
+  "http_status": null,
+  "finished_at_utc": "2026-10-09T13:54:48.752049+00:00"
+}

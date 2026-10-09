@@ -1,0 +1,78 @@
+{
+  "captured_at_utc": "2026-10-09T14:01:15.872070+00:00",
+  "scope": "Captured while writing the reproduction log; this is not a complete environment lockfile or a historical pre-run snapshot.",
+  "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "D:\\Anaconda\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "masfactory": "1.0.4",
+    "openai": "2.29.0",
+    "tiktoken": "0.13.0",
+    "tenacity": "8.5.0",
+    "anthropic": "1.7.0",
+    "google-genai": "2.24.0",
+    "numpy": "2.5.3",
+    "docstring-parser": "0.18.0"
+  },
+  "masfactory_source": "D:\\Graduate student\\MASFactory-main",
+  "masfactory_git_commit": null,
+  "git_note": "git rev-parse HEAD reported not a git repository in the local MASFactory directory.",
+  "files": [
+    {
+      "path": "D:\\Graduate student\\masfactory论文\\original_code\\masfactory_ses\\prepare_data.py",
+      "sha256": "05e152aafcd2c1bb1ccb1fe995e8b593f71d9462d355c686dd4e7fd5b378ec4d"
+    },
+    {
+      "path": "D:\\Graduate student\\masfactory论文\\original_code\\masfactory_ses\\single_agent.py",
+      "sha256": "f3454a884ac4727dc9b0f49b82e50f099358f07594ac8f2f2593862520bb88eb"
+    },
+    {
+      "path": "D:\\Graduate student\\masfactory论文\\original_data\\ambifc\\ambifc_publish-20261008T093810Z-1-001\\ambifc_publish\\test.certain.jsonl",
+      "sha256": "673223e0f99f20572965ab737dd255a84cf4244dd94f01f524601a063888c992"
+    },
+    {
+      "path": "D:\\Graduate student\\masfactory论文\\original_code\\collaboration_MAS-main\\fact_code\\filter_claim_data.py",
+      "sha256": "88c43f41b2f61b0c84524c554876b273d73b161945437fdb60f436b9f0ec9033"
+    },
+    {
+      "path": "D:\\Graduate student\\masfactory论文\\original_code\\masfactory_ses\\data\\processed\\filtered_test_certain_processed.json",
+      "sha256": "e7d10e2aae39d1af77e3e43f44fa9d3cafcea48c432df1beab1313ff55a22a43"
+    },
+    {
+      "path": "D:\\Graduate student\\masfactory论文\\original_code\\collaboration_MAS-main\\fact_code\\api.py",
+      "sha256": "ddbb1efed24dd472cd77d77ab3b78c5f52db8da2468e21d7898f8340b620e1b4"
+    },
+    {
+      "path": "D:\\Graduate student\\masfactory论文\\original_code\\collaboration_MAS-main\\fact_code\\G1-P1-I1-C1.py",
+      "sha256": "dc420a97e934c5fe11383335eaa7e21e17dcfa40e349b8078923cf12049c52c4"
+    },
+    {
+      "path": "D:\\Graduate student\\MASFactory-main\\pyproject.toml",
+      "sha256": "f1df2b8bcd6676d087d45cd1326eb411b3ffac0d42a8fed9dc6367fe9ca3b923"
+    },
+    {
+      "path": "D:\\Graduate student\\MASFactory-main\\masfactory\\components\\agents\\single_agent.py",
+      "sha256": "3f9740bace7a7fa12034f190517e200a8bbab54fac1c663d41c650c335a736c6"
+    },
+    {
+      "path": "D:\\Graduate student\\MASFactory-main\\masfactory\\components\\agents\\agent.py",
+      "sha256": "5e8ee934f8f16e61dcb2a1820ddf28e76845cd24a850224034c6bf8490898944"
+    },
+    {
+      "path": "D:\\Graduate student\\MASFactory-main\\masfactory\\components\\agents\\request_context.py",
+      "sha256": "0793e64591e9cdb1b46a82056b0196ca912be168e9dce08183803deb1277fc8d"
+    },
+    {
+      "path": "D:\\Graduate student\\MASFactory-main\\masfactory\\adapters\\model\\legacy_openai.py",
+      "sha256": "867c05393d6e31922dfe87b867ad914582e1d6f04df92928288ac774b636db6d"
+    },
+    {
+      "path": "D:\\Graduate student\\MASFactory-main\\masfactory\\adapters\\model\\base.py",
+      "sha256": "ccab24d9bc48026c41524bf46b4b2edd420715fa13e2a47b81b4f620278099c6"
+    },
+    {
+      "path": "D:\\Graduate student\\MASFactory-main\\masfactory\\adapters\\token_usage_tracker.py",
+      "sha256": "dc7a0007d130a28c992bf3fd3c2811115a63af0147b6eb8180d2aa86bdf60fe3"
+    }
+  ]
+}
