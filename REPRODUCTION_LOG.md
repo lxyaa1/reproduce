@@ -155,6 +155,14 @@ python -B -X utf8 masfactory_ses/single_agent.py --claim-id 7467
 
 **版本查询：** 当前版本使用 `git log -1 --oneline` 查询，后续实验在记录中写入当时的提交号。首个提交号不写入其自身文件，避免自引用；此前环境快照中的 MASFactory Git 状态仍是当时事实，本次未给外部 MASFactory 目录初始化 Git。
 
+### R007 — 2026-10-09：配置 GitHub、起草数据确认邮件并复核模型状态
+
+**远程仓库：** 用户指定 `https://github.com/lxyaa1/reproduce.git`；原消息链接尾部的逗号按标点处理。已配置为 `origin`，采用普通推送，不强制覆盖远程历史。首次远程查询受沙箱网络限制；沙箱外直连两次发生连接重置。检查发现系统已启用 `127.0.0.1:7890` 代理，使用 Git 单次 `-c http.proxy=...` 参数后查询成功，远程没有已有 refs。代理参数仅作用于本次命令，不更改全局 Git 配置。推送结果待确认。
+
+**作者询问：** 邮件草稿保存在 `docs/author_data_inquiry.md`，收件地址 `hcwang@ir.hit.edu.cn` 来自作者仓库 README。询问 AMBIFC 具体文件及发布版本、501 条是否对应完整评测集、是否额外筛选、各基线与协作配置是否共用样本，以及能否提供最终文件或 claim ID。邮件尚未发送。
+
+**模型复核：** 当日重新读取 [官方 GPT-4o 模型页](https://developers.openai.com/api/docs/models/gpt-4o)和[停用公告](https://developers.openai.com/api/docs/deprecations)。模型页仍列出 `gpt-4o-2024-08-06`；停用公告未找到该精确版本的下线条目。结合已保存的第三方 API 403，可确认当前服务商令牌无法访问该版本；仅凭错误无法进一步区分令牌白名单、账户分组或服务商未提供该快照。没有证据将该失败归因于 OpenAI 已停用原快照，也未用官方账户另做成功调用验证。
+
 ## 5. 下一步与完成标准
 
 1. **恢复模型权限。** 在服务商侧确认令牌可访问精确快照。完成标准为重新运行一条样本并取得真实模型响应；如仍无权限，记录限制，另行确定是否开展替代模型实验。
@@ -166,7 +174,7 @@ python -B -X utf8 masfactory_ses/single_agent.py --claim-id 7467
 ## 6. 后续追加模板
 
 ```text
-### R007 — YYYY-MM-DD：本次工作名称
+### R008 — YYYY-MM-DD：本次工作名称
 
 目的：
 输入/样本范围：
