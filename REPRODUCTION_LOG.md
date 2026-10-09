@@ -157,7 +157,7 @@ python -B -X utf8 masfactory_ses/single_agent.py --claim-id 7467
 
 ### R007 — 2026-10-09：配置 GitHub、起草数据确认邮件并复核模型状态
 
-**远程仓库：** 用户指定 `https://github.com/lxyaa1/reproduce.git`；原消息链接尾部的逗号按标点处理。已配置为 `origin`，采用普通推送，不强制覆盖远程历史。首次远程查询受沙箱网络限制；沙箱外直连两次发生连接重置。检查发现系统已启用 `127.0.0.1:7890` 代理，使用 Git 单次 `-c http.proxy=...` 参数后查询成功，远程没有已有 refs。代理参数仅作用于本次命令，不更改全局 Git 配置。推送结果待确认。
+**远程仓库：** 用户指定 `https://github.com/lxyaa1/reproduce.git`；原消息链接尾部的逗号按标点处理。已配置为 `origin`，采用普通推送，不强制覆盖远程历史。首次远程查询受沙箱网络限制；沙箱外直连两次发生连接重置。检查发现系统已启用 `127.0.0.1:7890` 代理，使用 Git 单次 `-c http.proxy=...` 参数后查询成功，远程没有已有 refs。代理参数仅作用于本次命令，不更改全局 Git 配置。随后 `git -c http.proxy=http://127.0.0.1:7890 push -u origin main` 成功，将 `f95e6d1`（含初始复现版本和邮件草稿）推送到远程 `main`，本地分支已跟踪 `origin/main`；本条成功记录作为后续文档提交同步。
 
 **作者询问：** 邮件草稿保存在 `docs/author_data_inquiry.md`，收件地址 `hcwang@ir.hit.edu.cn` 来自作者仓库 README。询问 AMBIFC 具体文件及发布版本、501 条是否对应完整评测集、是否额外筛选、各基线与协作配置是否共用样本，以及能否提供最终文件或 claim ID。邮件尚未发送。
 
